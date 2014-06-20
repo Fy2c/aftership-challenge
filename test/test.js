@@ -20,8 +20,10 @@ describe('Test: .is', function() {
 			]
 		};
 		it('Expect return true', function() {
-			var result = Courier.usps('9405903699300184125060');
-			result.should.eql(usps);
+			Courier.usps('9405903699300184125060')
+					.then(function(result){
+						result.should.eql(usps);
+					});
 		});
 	});
 

@@ -23,7 +23,10 @@
 	"dependencies": {
 		"mocha": "latest",
 		"underscore": "latest",
-		"should": "latest"
+		"should": "latest",
+		"when": "latest",
+		"xml2object": "latest",
+		"dateformat": "latest"
 	},
 	"devDependencies": {
 		"mocha": "latest",
