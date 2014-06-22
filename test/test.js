@@ -24,6 +24,7 @@ describe('Test: .is', function() {
 					.then(function(result){
 						result.should.eql(usps);
 					});
+			
 		});
 	});
 
@@ -144,8 +145,10 @@ describe('Test: .is', function() {
 		};
 
 		it('Expect return true', function() {
-			var result = Courier.dpduk('15502370264989N');
-			result.should.eql(dpduk);
+			Courier.dpduk('15502370264989N')
+					.then(function(result){
+						result.should.eql(dpduk);
+					});
 		});
 	});
 });
